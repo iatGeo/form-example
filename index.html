@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form example</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="container">
+         <h1>Form</h1>
+         <form class="number-form">
+            <label for="numInput">Number</label>
+            <input
+               type="number"
+               id="numInput"
+               placeholder="Please enter a number"
+               min="11"
+               oninput="setCustomValidity('')"
+               oninvalid="this.setCustomValidity('Please enter a number greater than 10.')"
+            />
+            <button type="submit">Submit</button>
+         </form>
+      </div>
+
+      <script src="main.js"></script>
+   </body>
+</html>
